@@ -282,6 +282,27 @@ body {
     box-sizing: border-box;
     color: #666666;
 }
+.conR-form1{
+    margin-top: 10px;
+}
+.conR-form1 table{
+    margin:10px auto;
+}
+.conR-form1 label{
+    color: #666b79;
+    font-size: 15px;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-weight: normal;
+}
 .conR-form1 td{
+    padding: 10px 25px;
+}
+.conR-form1 textarea{
+    width: 505px;
+    height: 82px;
+    border: solid 1px #c9c9c9;
+    resize: none;
     padding: 10px;
+    box-sizing: border-box;
 }
