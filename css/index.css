@@ -252,7 +252,6 @@ body {
     height: 21px;
     background: #F5873D;
     border-radius: 10px;
-
 }
 .conR-form1{
     border:1px solid #e2e4e8;
@@ -268,7 +267,6 @@ body {
     display: inline-block;
     vertical-align: middle;
 }
-
 .parent select {
     -webkit-appearance: none;
     -moz-appearance: none;
