@@ -149,10 +149,10 @@ body {
     background: url(../img/m5_p.png) no-repeat center 0 ;
 }
 .tab .bd{
+    position: relative;
     height: 100%;
     background: #4f525c;
     margin-left: 78px;
-    position: relative;
 }
 .tab .bd ul {
     display: none;
@@ -181,7 +181,7 @@ body {
 .tab-fold{
     position: absolute;
     top: 10px;
-    left: 115px;
+    right: 44px;
     z-index: 9;
     border:1px solid #393B45;
     border-radius: 3px;
@@ -212,4 +212,76 @@ body {
 }
 .tab-lock.on{
     color: #f5873d;
+}
+.conR{
+    /*width: 100%;*/
+    margin-left: 78px;
+
+}
+.conR-title{
+    width: 100%;
+    height: 47px;
+    line-height: 47px;
+    background: #e8edf0;
+    color: #666b79;
+    font-size: 14px;
+    padding:0 18px;
+    margin-top: -3px;
+}
+.conR-title img{
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.conR-form{
+    padding:12px;
+    box-sizing: border-box;
+}
+.com-h2{
+    position: relative;
+    color: #666b79;
+    font-size: 18px;
+    padding-left: 28px;
+    box-sizing: border-box;
+}
+.com-h2:before{
+    position: absolute;
+    left: 15px;
+    top: 0;
+    content: '';
+    width: 6px;
+    height: 21px;
+    background: #F5873D;
+    border-radius: 10px;
+
+}
+.conR-form1{
+    border:1px solid #e2e4e8;
+    background: #fff;
+}
+.parent {
+    background: url(../img/gc-open.png) right center no-repeat;
+    overflow: hidden;
+    width: 168px;
+    height: 30px;
+    line-height: 30px;
+    border: solid 1px #c9c9c9;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.parent select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: none;
+    padding-left: 8px;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #666666;
+}
+.conR-form1 td{
+    padding: 10px;
 }
