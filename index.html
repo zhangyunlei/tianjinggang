@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <title>航维宽普油液分析系统</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/fonts/fontawesome-webfont.svg">
+    <link rel="stylesheet" href="bootstrap/fonts/glyphicons-halflings-regular.svg">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div id="wrapper">
+    <header class="header clearfix">
+        <div class="header-title fl">航维宽普油液分析系统</div>
+        <div class="fr clearfix">
+            <div class="header-menu fl">
+                <a href="javascript:;" class="active">
+                    <div class="pic"><img src="img/icon1.png" alt=""></div>
+                    暖机
+                </a>
+                <a href="javascript:;">
+                    <div class="pic"><img src="img/icon2.png" alt=""></div>
+                    描迹
+                </a>
+                <a href="javascript:;">
+                    <div class="pic"><img src="img/icon3.png" alt=""></div>
+                    漂移校正
+                </a>
+                <a href="javascript:;">
+                    <div class="pic"><img src="img/icon4.png" alt=""></div>
+                    日常分析
+                </a>
+                <a href="javascript:;">
+                    <div class="pic"><img src="img/icon5.png" alt=""></div>
+                    质量检查
+                </a>
+            </div>
+            <div class="header-time fl">
+                2017年5月10日 <br>
+                17:30:26
+            </div>
+            <div class="user-nav fl">
+                <a href="javascript:;" class="user-logo">
+                    <img src="img/user.png">
+                </a>
+                <a href="##">
+                    admin
+                </a>
+                <a><i class="glyphicon glyphicon-menu-down"></i></a>
+            </div>
+
+        </div>
+    </header>
+    <div class="con clearfix">
+        <div class="conL fl">
+            <div class="tab clearfix">
+                <div class="tabTitle hd">
+                    <ul>
+                        <li class="">分析</li>
+                        <li class="">数据</li>
+                        <li class="">设置</li>
+                        <li class="">系统</li>
+                        <li class="">管理</li>
+                    </ul>
+                </div>
+                <div class="tabContent bd">
+                    <div class="tab-fold">
+                        <i class="fa fa-angle-double-left"></i>
+                    </div>
+                    <div class="tab-lock">
+                        <i class="fa fa-lock"></i>
+                    </div>
+                    <ul>
+                        <li><a href="##">&bull; 暖机</a></li>
+                        <li><a href="##">&bull; 描述</a></li>
+                        <li><a href="##">&bull; 标准化</a></li>
+                        <li><a href="##">&bull; 日常分析</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="##">&bull; 2</a></li>
+                        <li><a href="##">&bull; 暖机</a></li>
+                        <li><a href="##">&bull; 描述</a></li>
+                        <li><a href="##">&bull; 标准化</a></li>
+                        <li><a href="##">&bull; 日常分析</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="##">&bull; 3</a></li>
+                        <li><a href="##">&bull; 暖机</a></li>
+                        <li><a href="##">&bull; 描述</a></li>
+                        <li><a href="##">&bull; 标准化</a></li>
+                        <li><a href="##">&bull; 日常分析</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="##">&bull; 4</a></li>
+                        <li><a href="##">&bull; 暖机</a></li>
+                        <li><a href="##">&bull; 描述</a></li>
+                        <li><a href="##">&bull; 标准化</a></li>
+                        <li><a href="##">&bull; 日常分析</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="##">&bull; 5</a></li>
+                        <li><a href="##">&bull; 暖机</a></li>
+                        <li><a href="##">&bull; 描述</a></li>
+                        <li><a href="##">&bull; 标准化</a></li>
+                        <li><a href="##">&bull; 日常分析</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="conR fl">
+
+        </div>
+    </div>
+</div>
+<div class="footer">
+</div>
+</body>
+</html>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/html5.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script>
+    $(function () {
+
+//        $(".tab").slide({
+//            trigger: "click"
+//        });
+
+
+
+        $(".tabTitle li").click(function () {
+            $(this).addClass("on").siblings().removeClass("on");
+            var i = $(this).index();
+            $(this).parent().parent().next().children('ul').eq(i).addClass("on").siblings().removeClass("on");
+        });
+
+        $('.tab-lock').click(function(){
+            $(this).toggleClass('on')
+        })
+
+    });
+</script>
+
+
+
