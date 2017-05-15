@@ -58,7 +58,7 @@
     <div class="con clearfix">
         <div class="conL fl">
             <div class="tab clearfix">
-                <div class="tabTitle hd">
+                <div id="tabTitle" class="tabTitle hd">
                     <ul>
                         <li class="">分析</li>
                         <li class="">数据</li>
@@ -67,13 +67,16 @@
                         <li class="">管理</li>
                     </ul>
                 </div>
-                <div class="tabContent bd">
-                    <div class="tab-fold">
-                        <i class="fa fa-angle-double-left"></i>
+                <div id="tabContent" class="tabContent bd">
+                    <div id="btnCtrl" style="display: none;">
+                        <div id="tabFold" class="tab-fold">
+                            <i class="fa fa-angle-double-left"></i>
+                        </div>
+                        <div id="tabLock" class="tab-lock">
+                            <i class="fa fa-lock"></i>
+                        </div>
                     </div>
-                    <div class="tab-lock">
-                        <i class="fa fa-lock"></i>
-                    </div>
+
                     <ul>
                         <li><a href="##">&bull; 暖机</a></li>
                         <li><a href="##">&bull; 描述</a></li>
@@ -133,14 +136,30 @@
 
 
 
-        $(".tabTitle li").click(function () {
+        $("#tabTitle li").click(function () {
             $(this).addClass("on").siblings().removeClass("on");
             var i = $(this).index();
-            $(this).parent().parent().next().children('ul').eq(i).addClass("on").siblings().removeClass("on");
+            $('#tabContent>ul').eq(i).addClass("on").siblings().removeClass("on");
+            $('#btnCtrl').show();
         });
 
-        $('.tab-lock').click(function(){
-            $(this).toggleClass('on')
+        $('#tabFold').on('click',function () {
+            closeMenu();
+        });
+        function closeMenu() {
+            $('#tabContent>ul').removeClass("on");
+            $("#tabTitle li").removeClass("on");
+            $('#btnCtrl').hide();
+        }
+        $('#tabLock').on('click',function(){
+            $(this).toggleClass('on');
+            if($(this).hasClass('on')){
+                $('#tabFold').off('click');
+            }else {
+                $('#tabFold').on('click',function () {
+                    closeMenu();
+                });
+            }
         })
 
     });
