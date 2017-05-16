@@ -424,22 +424,22 @@ body {
     margin-left: -12px;
 }
 /****zyl-start****/
-.conR-form .rcfx label{
+.conR-form .bcsm label{
     width: 76px;
 }
-.conR-form .rcfx input[type=text]{
+.conR-form .bcsm input[type=text]{
     width: 168px;
     height: 30px;
     line-height: 30px;
     border: solid 1px #c9c9c9;
 }
-.conR-form .rcfx textarea{
+.conR-form .bcsm textarea{
     width: 790px;
 }
-.conR-form .rcfx .check-default{
+.conR-form .bcsm .check-default{
     padding: 0;
 }
-.conR-form .rcfx .check-default label{
+.conR-form .bcsm .check-default label{
     width:auto;
 }
 .conR-form .wave-box{
