@@ -12,16 +12,37 @@
 body {
     background: #f5f8fa;
 }
-
-.header {
+.header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
     width: 100%;
     min-width: 1200px;
     height: 82px;
     background: #4776ab;
     padding: 0 40px;
-    box-sizing: border-box;
 }
-
+.con{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 82px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+.conL{
+    height: 100%;
+    float: left;
+    background: #3d3f44;
+}
+.conR{
+    margin-left: 78px;
+}
+.tab{
+    height: 100%;
+}
 .header-title {
     font-weight: bold;
     font-size: 32px;
@@ -72,7 +93,6 @@ body {
 
 .user-nav {
     margin-top: 20px;
-
 }
 
 .user-nav a {
@@ -87,15 +107,11 @@ body {
     overflow: hidden;
     margin-right: 5px;
 }
-.conL{
-    background: #3d3f44;
-}
+
 /*内容部分*/
 .tab {
-    height:868px;
     background: #3d3f44;
 }
-
 .tab .hd {
     float: left;
     height: 100%;
@@ -213,10 +229,9 @@ body {
 .tab-lock.on{
     color: #f5873d;
 }
-.conR{
-    /*width: 100%;*/
-    margin-left: 78px;
 
+.conR.unfold{
+    margin-left:263px;
 }
 .conR-title{
     width: 100%;
@@ -226,14 +241,15 @@ body {
     color: #666b79;
     font-size: 14px;
     padding:0 18px;
-    margin-top: -3px;
 }
 .conR-title img{
     margin-right: 5px;
     vertical-align: middle;
+    margin-top: -3px;
 }
 .conR-form{
     padding:12px;
+    padding-top: 30px;
     box-sizing: border-box;
 }
 .com-h2{
@@ -252,7 +268,6 @@ body {
     height: 21px;
     background: #F5873D;
     border-radius: 10px;
-
 }
 .conR-form1{
     border:1px solid #e2e4e8;
@@ -268,7 +283,6 @@ body {
     display: inline-block;
     vertical-align: middle;
 }
-
 .parent select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -282,14 +296,22 @@ body {
     box-sizing: border-box;
     color: #666666;
 }
+.parent select::-ms-expand{
+    display: none;
+}
+
+.conR-form1{
+    margin-top: 10px;
+}
 .conR-form1 table{
-    margin:0 auto;
+    margin:10px auto;
 }
 .conR-form1 label{
     color: #666b79;
     font-size: 15px;
     vertical-align: middle;
     margin-right: 10px;
+    font-weight: normal;
 }
 .conR-form1 td{
     padding: 10px 25px;
@@ -301,4 +323,103 @@ body {
     resize: none;
     padding: 10px;
     box-sizing: border-box;
+}
+.conR-form2 table{
+    margin-top: 18px;
+    width: 100%;
+    border-collapse: collapse;
+    border:1px solid #e2e4e8;
+    text-align: center;
+    background: #fff;
+}
+.conR-form2 table th{
+    padding:10px 0;
+    border:1px solid #e2e4e8;
+    color: #4c515f;
+    font-size: 14px;
+    background: #e8edf0;
+    text-align: center;
+}
+.conR-form2 table td{
+    padding:10px 0;
+    border:1px solid #e2e4e8;
+    color: #4c515f;
+    font-size: 14px;
+}
+.operate{
+    margin-top: 15px;
+}
+.operate a{
+    display: inline-block;
+    border-radius: 3px;
+    background-image: -moz-linear-gradient( 90deg, rgb(236,240,242) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(236,240,242) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(236,240,242) 0%, rgb(255,255,255) 100%);
+    width: 76px;
+    height: 35px;
+    line-height: 35px;
+    border:1px solid #B6B6B6;
+    color: #666b79;
+    font-size: 14px;
+    text-align: center;
+    margin:0 8px;
+}
+.operate a img{
+    margin-right: 4px;
+    margin-top: -2px;
+}
+.user-nav-bar{
+    /*margin-bottom: 10px;*/
+}
+.user-nav .dropdown-menu{
+    position: absolute;
+    top: 50px;
+    /*display: block;*/
+    min-width: 120px!important;
+    border:1px solid #406692;
+    background: #466f9d;
+
+}
+.dropdown-menu>li>a{
+    color: #98b9df;
+    font-size: 14px;
+    padding:10px 20px;
+}
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #5986b8;
+}
+.fa-edit,.glyphicon-log-out{
+    font-size: 20px;
+   vertical-align: middle;
+    margin-right: 5px;
+}
+.arrow_box {
+    background: #466f9d;
+    border: 1px solid #406692;
+}
+.arrow_box:after, .arrow_box:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box:after {
+    border-color: transparent;
+    border-bottom-color: #466f9d;
+    border-width: 10px;
+    margin-left: -10px;
+}
+.arrow_box:before {
+    border-color:transparent;
+    border-bottom-color: #406692;
+    border-width: 12px;
+    margin-left: -12px;
 }

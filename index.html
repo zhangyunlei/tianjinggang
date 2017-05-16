@@ -14,7 +14,7 @@
 </head>
 <body>
 <div id="wrapper">
-    <header class="header clearfix">
+    <div class="header clearfix">
         <div class="header-title fl">航维宽普油液分析系统</div>
         <div class="fr clearfix">
             <div class="header-menu fl">
@@ -43,22 +43,27 @@
                 2017年5月10日 <br>
                 17:30:26
             </div>
-            <div class="user-nav fl">
-                <a href="javascript:;" class="user-logo">
-                    <img src="img/user.png">
-                </a>
-                <a href="##">
-                    admin
-                </a>
-                <a><i class="glyphicon glyphicon-menu-down"></i></a>
-            </div>
+            <div class="dropdown user-nav fr">
+                <div class="user-nav-bar">
+                    <a href="javascript:;" class="user-logo">
+                    <img src="img/user.png"></a>
+                    <a href="##">
+                        admin
+                    </a>
+                    <a><i class="glyphicon glyphicon-menu-down"></i></a>
+                </div>
+                <ul class="dropdown-menu arrow_box">
+                    <li><a href="##"><i class="fa fa-edit "></i>修改密码</a></li>
+                    <li><a href="##"><i class="glyphicon glyphicon-log-out"></i>退出登录</a></li>
 
+                </ul>
+            </div>
         </div>
-    </header>
+    </div>
     <div class="con clearfix">
         <div class="conL fl">
             <div class="tab clearfix">
-                <div class="tabTitle hd">
+                <div id="tabTitle" class="tabTitle hd">
                     <ul>
                         <li class="">分析</li>
                         <li class="">数据</li>
@@ -67,13 +72,16 @@
                         <li class="">管理</li>
                     </ul>
                 </div>
-                <div class="tabContent bd">
-                    <div class="tab-fold">
-                        <i class="fa fa-angle-double-left"></i>
+                <div id="tabContent" class="tabContent bd">
+                    <div id="btnCtrl" style="display: none;">
+                        <div id="tabFold" class="tab-fold">
+                            <i class="fa fa-angle-double-left"></i>
+                        </div>
+                        <div id="tabLock" class="tab-lock">
+                            <i class="fa fa-lock"></i>
+                        </div>
                     </div>
-                    <div class="tab-lock">
-                        <i class="fa fa-lock"></i>
-                    </div>
+
                     <ul>
                         <li><a href="##">&bull; 暖机</a></li>
                         <li><a href="##">&bull; 描述</a></li>
@@ -112,7 +120,7 @@
             </div>
         </div>
         <div class="conR">
-            <div class="conR-title"><img src="img/home.png" alt="" >位置：首页 >> 日常分析</div>
+            <div class="conR-title"><img src="img/home.png" alt="">位置：首页 >> 日常分析</div>
             <div class="conR-form">
                 <div class="com-h2">日常分析</div>
                 <div class="conR-form1">
@@ -177,6 +185,154 @@
                         </tr>
                     </table>
                 </div>
+                <div class="conR-form2">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>元素</th>
+                            <th><input type="checkbox">1</th>
+                            <th><input type="checkbox">2</th>
+                            <th>均值</th>
+                            <th>SD</th>
+                            <th>RSD%</th>
+                            <th>PMT通道</th>
+                            <th>浓度警告值</th>
+                            <th>浓度异常值</th>
+                            <th>增长率异常值</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>zn</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>6</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                        </tr>
+                        <tr>
+                            <td>zn</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>6</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                        </tr>
+                        <tr>
+                            <td>zn</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>6</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                        </tr>
+                        <tr>
+                            <td>zn</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>6</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                        </tr>
+                        <tr>
+                            <td>zn</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>6</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                        </tr>
+                        <tr>
+                            <td>zn</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>6</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                        </tr>
+                        <tr>
+                            <td>zn</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>6</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                        </tr>
+                        <tr>
+                            <td>zn</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>6</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                        </tr>
+                        <tr>
+                            <td>zn</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>6</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                        </tr> <tr>
+                            <td>zn</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>6</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                            <td>6.0000</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    <div class="operate">
+                        <a href="##"><img src="img/o1.png" alt="">激发</a>
+                        <a href="##"><img src="img/o2.png" alt="">新油样</a>
+                        <a href="##"><img src="img/o3.png" alt="">删除</a>
+                        <a href="##"><img src="img/o4.png" alt="">保存</a>
+                        <a href="##"><img src="img/o5.png" alt="">打印</a>
+                        <a href="##"><img src="img/o6.png" alt="">导出</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -197,17 +353,39 @@
 //        });
 
 
-
-        $(".tabTitle li").click(function () {
+        $("#tabTitle li").click(function () {
+            $('.conR').addClass('unfold');
             $(this).addClass("on").siblings().removeClass("on");
             var i = $(this).index();
-            $(this).parent().parent().next().children('ul').eq(i).addClass("on").siblings().removeClass("on");
+            $('#tabContent>ul').eq(i).addClass("on").siblings().removeClass("on");
+            $('#btnCtrl').show();
         });
 
-        $('.tab-lock').click(function(){
-            $(this).toggleClass('on')
-        })
+        $('#tabFold').on('click', function () {
+            closeMenu();
+        });
+        function closeMenu() {
+            $('.conR').removeClass('unfold');
+            $('#tabContent>ul').removeClass("on");
+            $("#tabTitle li").removeClass("on");
+            $('#btnCtrl').hide();
+        }
 
+        $('#tabLock').on('click', function () {
+            $(this).toggleClass('on');
+            if ($(this).hasClass('on')) {
+                $('#tabFold').off('click');
+            } else {
+                $('#tabFold').on('click', function () {
+                    closeMenu();
+                });
+            }
+        });
+
+//        导航菜单
+    $('.user-nav-bar').click(function(){
+        $(this).next().toggle();
+    })
     });
 </script>
 
