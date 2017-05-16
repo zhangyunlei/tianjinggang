@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
     <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-    <title>操作参数</title>
+    <title>航维宽普油液分析系统</title>
     <link rel="stylesheet" href="css/reset.min.css">
     <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
     <link rel="stylesheet" href="bootstrap/fonts/fontawesome-webfont.svg">
@@ -120,72 +120,150 @@
             </div>
         </div>
         <div class="conR">
-            <div class="conR-title"><img src="img/home.png" alt="">位置：首页 >> 操作参数</div>
+            <div class="conR-title"><img src="img/home.png" alt="">位置：首页 >> 日常分析</div>
             <div class="conR-form">
-                <div class="com-h2">操作参数</div>
-                <div class="conR-form1">
-                    <div class="conR-form1-table">
+                <div class="com-h2">波长扫描</div>
+                <div class="conR-form1 bcsm">
                     <table>
                         <tr>
                             <td>
-                                <label for="">功能设置</label>
+                                <label for="">显示：</label>
+                                <!--<p class="parent">-->
+                                <input type="text">
+                                <!--</p>-->
+                            </td>
+                            <td>
+                                <label for="">标油：</label>
                                 <p class="parent">
                                     <select name="" id="">
-                                        <option value="">功能设置</option>
-                                        <option value="">功能设置</option>
+                                        <option value="">ANALYSIS001</option>
+                                        <option value="">ANALYSIS001111</option>
                                     </select>
                                 </p>
                             </td>
+                            <td>
+                                <label for="">测试编号：</label>
+                                <!--<p class="parent">-->
+                                <input type="text">
+                                <!--</p>-->
+                            </td>
+                            <td class="check-default">
+                                <input type="checkbox" id="default">
+                                <label for="default">默认</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="">扫描方式：</label>
+                                <p class="parent">
+                                    <select name="" id="">
+                                        <option value="">ANALYSIS001</option>
+                                        <option value="">ANALYSIS001111</option>
+                                    </select>
+                                </p>
+                            </td>
+                            <td>
+                                <label for="">曝光时间：</label>
+                                <!--<p class="parent">-->
+                                <input type="text">
+                                <!--</p>-->
+                            </td>
+                            <td>
+                                <label for="">预燃时间：</label>
+                                <!--<p class="parent">-->
+                                <input type="text">
+                                <!--</p>-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="">SN序号：</label>
+                                <!--<p class="parent">-->
+                                <input type="text">
+                                <!--</p>-->
+                            </td>
+                            <td>
+                                <label for="">功率：</label>
+                                <!--<p class="parent">-->
+                                <input type="text">
+                                <!--</p>-->
+                            </td>
+                            <td>
+                                <label for="">功率：</label>
+                                <!--<p class="parent">-->
+                                <input type="text">
+                                <!--</p>-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" rowspan="2">
+                                <label for="" style="vertical-align: top">备注：</label>
+                                <textarea name="" id="" cols="30" rows="10">
+
+                                </textarea>
+                            </td>
                         </tr>
                     </table>
+                </div>
+                <div class="conR-form1">
+                    <div class="wave-box ">
+                        <div class="ele-box">
+                            <ul id="eleList" class="ele-list">
+                                <li>Zn</li>
+                                <li>Cu</li>
+                                <li>Si</li>
+                                <li>Fe</li>
+                                <li>H</li>
+                                <li>Cr</li>
+                                <li>Hg</li>
+                                <li>Ag</li>
+                                <li>Ti</li>
+                                <li>Sn</li>
+                                <li>Al</li>
+                                <li>Zn</li>
+                                <li>Cu</li>
+                                <li>Si</li>
+                                <li>Fe</li>
+                                <li>H</li>
+                                <li>Cr</li>
+                                <li>Hg</li>
+                                <li>Ag</li>
+                                <li>Ti</li>
+                                <li>Sn</li>
+                                <li>Al</li>
+                            </ul>
+                        </div>
+                        <img src="img/wave.png" alt="">
                     </div>
                 </div>
-                <div class="slideTxtBox">
-                    <div class="hd">
-                        <ul>
-                            <li class="on"><img src="img/o8.png" alt="">通用参数  </li>
-                            <li class=""><img src="img/o5_white.png" alt="">打印设置   </li>
-                            <li class=""><img src="img/o6_white.png" alt="">通用设置   </li></ul>
-                    </div>
-                    <div class="bd">
-                        <div class="table1">
-                            <table>
-                                <tr>
-                                    <td><label for="">激发次数（最小）：</label><input type="text"></td>
-                                    <td><label for="">激发次数（最大）：</label><input type="text"></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="">浓度：</label><input type="text"></td>
-                                    <td><label for="">原始光强：</label><input type="text"></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="">净  光 强：</label><input type="text"></td>
-                                    <td><label for="">漂移校正光强：</label><input type="text"></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="">光强比：</label><input type="text"></td>
-                                    <td><label for="">说明：</label><input type="text"></td>
-                                </tr>
-                            </table>
-                            <button class="blue-btn" style="margin-top: 60px;">保存</button>
-                        </div>
-                        <div>2</div>
-                        <div>3</div>
-                    </div>
+                <div class="operate">
+                    <a href="##"><img src="img/o7.png" alt="">开始</a>
+                    <a href="##"><img src="img/o4.png" alt="">保存</a>
+                    <a href="##"><img src="img/o5.png" alt="">打印</a>
+                    <a href="##"><img src="img/o6.png" alt="">导出</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="footer">
-</div>
+
 </body>
 </html>
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="bootstrap/js/html5.min.js"></script>
 <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="js/jquery.slimscroll.js"></script>
 <script src="js/index.js"></script>
-
-
-
+<script>
+    $(function () {
+        $('#eleList').slimscroll({
+            height:'339px',
+            alwaysVisible: true, //是否 始终显示组件
+            disableFadeOut: false, //是否 鼠标经过可滚动区域时显示组件，离开时隐藏组件
+            railVisible: true, //是否 显示轨道
+            railColor: '#333', //轨道颜色
+            railOpacity: .2 //轨道透明度
+        })
+    })
+</script>

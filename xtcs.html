@@ -150,10 +150,25 @@
                                 </tr>
                                 <tr>
                                     <td><label for="">符合标准：</label><input type="text"></td>
-                                    <td><label for="">电压：</label><input type="text"></td>
+                                    <td><label for="">语言：</label><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="">电脑接口：</label><input type="text"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><label for="">制造厂商：</label><input type="text" style="width: 610px;"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><label for="">地质：</label><input type="text" style="width: 610px;"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="">电话：</label><input type="text"></td>
+                                    <td></td>
                                 </tr>
                             </table>
-                            <button class="blue-btn" style="margin-top: 60px;">保存</button>
+                            <button class="blue-btn green-btn" style="margin-top: 60px;">编&nbsp; 辑</button>
+                            <button class="blue-btn" style="margin-top: 60px;">保 &nbsp;存</button>
                         </div>
                         <div>2</div>
                         <div>3</div>
@@ -171,51 +186,7 @@
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="bootstrap/js/html5.min.js"></script>
 <script src="js/jquery.SuperSlide.2.1.1.js"></script>
-<script>
-    $(function () {
-        $(".slideTxtBox").slide({
-            trigger: "click"
-        });
-
-
-        $("#tabTitle li").click(function () {
-            $('.conR').addClass('unfold');
-            $(this).addClass("on").siblings().removeClass("on");
-            var i = $(this).index();
-            $('#tabContent>ul').eq(i).addClass("on").siblings().removeClass("on");
-            $('#btnCtrl').show();
-        });
-
-        $('#tabFold').on('click', function () {
-            closeMenu();
-        });
-        function closeMenu() {
-            $('.conR').removeClass('unfold');
-            $('#tabContent>ul').removeClass("on");
-            $("#tabTitle li").removeClass("on");
-            $('#btnCtrl').hide();
-        }
-
-        $('#tabLock').on('click', function () {
-            $(this).toggleClass('on');
-            if ($(this).hasClass('on')) {
-                $('#tabFold').off('click');
-            } else {
-                $('#tabFold').on('click', function () {
-                    closeMenu();
-                });
-            }
-        });
-
-//        导航菜单
-        $('.user-nav-bar').click(function(){
-            $(this).next().toggle();
-        });
-//        左侧导航高度自适应，最小高度一屏
-        var h=$('.con').height();
-        $('.conL').height(h);
-    });
-</script>
+<script src="js/index.js"></script>
 
 
 

@@ -487,33 +487,55 @@ body {
     border-width: 12px;
     margin-left: -12px;
 }
-
-/****zyl-start****/
-.conR-form .rcfx label {
+/*zyl start*/
+.conR-form .bcsm label{
     width: 76px;
 }
-
-.conR-form .rcfx input[type=text] {
+.conR-form .bcsm input[type=text]{
     width: 168px;
     height: 30px;
     line-height: 30px;
-    border: solid 1px #c9c9c9;
+    border:1px solid  #c9c9c9;
 }
-
-.conR-form .rcfx textarea {
+.conR-form .bcsm textarea{
     width: 790px;
 }
-
-.conR-form .rcfx .check-default {
+.conR-form .bcsm .check-default{
     padding: 0;
 }
-
-.conR-form .rcfx .check-default label {
-    width: auto;
+.conR-form .bcsm .check-default label{
+    width:auto;
 }
-
-.conR-form .wave-box {
-    padding: 14px;
+.conR-form .wave-box{
+    margin: 0 auto;
+    padding: 14px 0;
+    width: 1138px;
+    overflow: hidden;
+}
+.wave-box .ele-box{
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    padding: 8px;
+    width: 65px;
+    height: 355px;
+    line-height: 2.2;
+    border: 1px solid #e2e4e8;
+}
+.wave-box .ele-list{
+    overflow: hidden;
+}
+.wave-box .ele-box:after{
+    position: absolute;
+    top: 44px;
+    right: -7px;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-top:1px solid #e2e4e8;
+    border-right:1px solid #e2e4e8;
+    transform: rotate(45deg);
 }
 
 /****zyl-end****/
@@ -543,6 +565,7 @@ body {
     margin-right: 10px;
     color: #fff;
     font-size: 14px;
+    text-align: center;
 }
 .slideTxtBox .hd ul li img{
     margin-right: 5px;
@@ -596,5 +619,8 @@ body {
     text-align: center;
     border: none;
     outline: none;
+    margin:0 15px;
 }
-
+.green-btn{
+    background: #6dda8e;
+}
