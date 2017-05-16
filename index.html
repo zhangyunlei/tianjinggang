@@ -337,7 +337,8 @@
             <div class="conR-form">
                 <div class="com-h2">日常分析</div>
                 <div class="conR-form1 rcfx">
-                    <table>
+                    <div class="conR-form1-table">
+                        <table>
                         <tr>
                             <td>
                                 <label for="">显示：</label>
@@ -417,6 +418,7 @@
                             </td>
                         </tr>
                     </table>
+                    </div>
                 </div>
                 <div class="conR-form1">
                     <div class="wave-box">
@@ -481,7 +483,10 @@
 //        导航菜单
     $('.user-nav-bar').click(function(){
         $(this).next().toggle();
-    })
+    });
+//        左侧导航高度自适应，最小高度一屏
+        var h=$('.con').height();
+        $('.conL').height(h);
     });
 </script>
 
