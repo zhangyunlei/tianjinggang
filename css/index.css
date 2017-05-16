@@ -443,6 +443,34 @@ body {
     width:auto;
 }
 .conR-form .wave-box{
-    padding: 14px;
+    margin: 0 auto;
+    padding: 14px 0;
+    width: 1138px;
+    overflow: hidden;
+}
+.wave-box .ele-box{
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    padding: 8px;
+    width: 65px;
+    height: 355px;
+    line-height: 2.2;
+    border: 1px solid #e2e4e8;
+}
+.wave-box .ele-list{
+    overflow: hidden;
+}
+.wave-box .ele-box:after{
+    position: absolute;
+    top: 44px;
+    right: -7px;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-top:1px solid #e2e4e8;
+    border-right:1px solid #e2e4e8;
+    transform: rotate(45deg);
 }
 /****zyl-end****/
