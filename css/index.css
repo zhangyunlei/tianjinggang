@@ -12,6 +12,7 @@
 }
 
 body {
+    font-family: 微软雅黑;
     background: #f5f8fa;
 }
 
@@ -35,6 +36,7 @@ body {
     box-sizing: border-box;
     min-height: 100%;
     width: 100%;
+    min-width: 1440px;
 }
 
 .conL {
@@ -280,6 +282,7 @@ body {
 }
 
 .conR-form {
+    position: relative;
     padding: 12px;
     padding-top: 30px;
     box-sizing: border-box;
@@ -360,6 +363,8 @@ body {
     vertical-align: middle;
     margin-right: 10px;
     font-weight: normal;
+    width: 75px;
+    text-align: right;
 }
 
 .conR-form1 td {
@@ -367,7 +372,7 @@ body {
 }
 
 .conR-form1 textarea {
-    width: 505px;
+    width: 478px;
     height: 82px;
     border: solid 1px #c9c9c9;
     resize: none;
@@ -434,8 +439,8 @@ body {
     top: 50px;
     /*display: block;*/
     min-width: 120px !important;
-    border: 1px solid #406692;
-    background: #466f9d;
+    border: 1px solid #2a4463;
+    background: #31537a;
 
 }
 
@@ -459,8 +464,8 @@ body {
 }
 
 .arrow_box {
-    background: #466f9d;
-    border: 1px solid #406692;
+    background: #31537a;
+    border: 1px solid #2a4463;
 }
 
 .arrow_box:after, .arrow_box:before {
@@ -476,14 +481,14 @@ body {
 
 .arrow_box:after {
     border-color: transparent;
-    border-bottom-color: #466f9d;
+    border-bottom-color: #31537a;
     border-width: 10px;
     margin-left: -10px;
 }
 
 .arrow_box:before {
     border-color: transparent;
-    border-bottom-color: #406692;
+    border-bottom-color: #2a4463;
     border-width: 12px;
     margin-left: -12px;
 }
@@ -492,6 +497,8 @@ body {
     width: 76px;
 }
 .conR-form .bcsm input[type=text]{
+    padding-left: 8px;
+    box-sizing: border-box;
     width: 168px;
     height: 30px;
     line-height: 30px;
@@ -508,8 +515,9 @@ body {
 }
 .conR-form .wave-box{
     margin: 0 auto;
-    padding: 14px 0;
-    width: 1138px;
+    padding: 14px;
+    min-width: 1200px;
+    /*width: 1138px;*/
     overflow: hidden;
 }
 .wave-box .ele-box{
@@ -524,6 +532,9 @@ body {
 }
 .wave-box .ele-list{
     overflow: hidden;
+    text-align: right;
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 .wave-box .ele-box:after{
     position: absolute;
@@ -623,4 +634,104 @@ body {
 }
 .green-btn{
     background: #6dda8e;
+}
+.conR-form input[type=text] {
+    padding-left: 8px;
+    box-sizing: border-box;
+    width: 168px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #c9c9c9;
+}
+.wave-img-box{
+    margin-left: 85px;
+}
+.min-blue-btn{
+    display: inline-block;
+    width: 62px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #45cfec;
+    color: #fff;
+    font-size: 14px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.min-grey-btn{
+    display: inline-block;
+    width: 62px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #eceff2;
+    color: #666b79;
+    font-size: 14px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -3px;
+}
+.top-operate{
+    position: absolute;
+    top: 8px;
+    right: 4px;
+}
+/*分页*/
+.pagination>li>a, .pagination>li>span {
+    color: #5d5d5d;
+    font-weight: bold;
+    border: 1px solid #b6b6b6;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin:0 5px;
+    background-image: -moz-linear-gradient( 90deg, rgb(235,235,235) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(235,235,235) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(235,235,235) 0%, rgb(255,255,255) 100%);
+}
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+    z-index: 2;
+    color: #fff;
+    background-color: #f2853b;
+    border-color: #cc6722;
+    background-image: none;
+}
+.pagination>li.dot>a{
+    border:none;
+    background: none;
+}
+.pagination>li.dot>a:focus, .pagination>li.dot>a:hover, .pagination>li.dot>span:focus, .pagination>li.dot>span:hover {
+    z-index: 2;
+    color: #5d5d5d;
+    background: none;
+}
+.page{
+    background: #fff;
+    border:1px solid #e2e4e8;
+    border-top:none;
+    text-align: right;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.nh-style{
+    height: 100%;
+    margin-left: 760px;
+    margin-top: 0;
+}
+.curve{
+    width: 740px;
+    height: 250px;
+    overflow: hidden;
+}
+.curve img{
+    width: 100%;
+    height: 100%;
 }

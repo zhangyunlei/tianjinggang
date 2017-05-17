@@ -25,7 +25,7 @@
                 color: '#000',
 
                 // scrollbar position - left/right
-                position : 'right',
+                position : 'left',
 
                 // distance in pixels between the side edge and the scrollbar
                 distance : '1px',

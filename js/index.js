@@ -39,7 +39,11 @@ $(function () {
     $('.user-nav-bar').click(function(){
         $(this).next().toggle();
     });
-    //        左侧导航高度自适应，最小高度一屏
+    //    左侧导航高度自适应，最小高度一屏
+    $(window).resize(function(){
+        location.replace(location);
+    });
     var h=$('.con').height();
     $('.conL').height(h);
+
 });

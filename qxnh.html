@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
     <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-    <title>航维宽普油液分析系统</title>
+    <title>曲线拟合</title>
     <link rel="stylesheet" href="css/reset.min.css">
     <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
     <link rel="stylesheet" href="bootstrap/fonts/fontawesome-webfont.svg">
@@ -120,95 +120,13 @@
             </div>
         </div>
         <div class="conR">
-            <div class="conR-title"><img src="img/home.png" alt="">位置：首页 >> 日常分析</div>
+            <div class="conR-title"><img src="img/home.png" alt="">位置：首页 >> 曲线拟合</div>
             <div class="conR-form">
-                <div class="com-h2">波长扫描</div>
-                <div class="conR-form1 bcsm">
-                    <table>
-                        <tr>
-                            <td>
-                                <label for="">显示：</label>
-                                <!--<p class="parent">-->
-                                <input type="text">
-                                <!--</p>-->
-                            </td>
-                            <td>
-                                <label for="">标油：</label>
-                                <p class="parent">
-                                    <select name="" id="">
-                                        <option value="">ANALYSIS001</option>
-                                        <option value="">ANALYSIS001111</option>
-                                    </select>
-                                </p>
-                            </td>
-                            <td>
-                                <label for="">测试编号：</label>
-                                <!--<p class="parent">-->
-                                <input type="text">
-                                <!--</p>-->
-                            </td>
-                            <td class="check-default">
-                                <input type="checkbox" id="default">
-                                <label for="default">默认</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="">扫描方式：</label>
-                                <p class="parent">
-                                    <select name="" id="">
-                                        <option value="">ANALYSIS001</option>
-                                        <option value="">ANALYSIS001111</option>
-                                    </select>
-                                </p>
-                            </td>
-                            <td>
-                                <label for="">曝光时间：</label>
-                                <!--<p class="parent">-->
-                                <input type="text">
-                                <!--</p>-->
-                            </td>
-                            <td>
-                                <label for="">预燃时间：</label>
-                                <!--<p class="parent">-->
-                                <input type="text">
-                                <!--</p>-->
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="">SN序号：</label>
-                                <!--<p class="parent">-->
-                                <input type="text">
-                                <!--</p>-->
-                            </td>
-                            <td>
-                                <label for="">功率：</label>
-                                <!--<p class="parent">-->
-                                <input type="text">
-                                <!--</p>-->
-                            </td>
-                            <td>
-                                <label for="">功率：</label>
-                                <!--<p class="parent">-->
-                                <input type="text">
-                                <!--</p>-->
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3" rowspan="2">
-                                <label for="" style="vertical-align: top">备注：</label>
-                                <textarea name="" id="" cols="30" rows="10">
-
-                                </textarea>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+                <div class="com-h2">曲线拟合</div>
                 <div class="conR-form1">
                     <div class="wave-box clearfix">
-                        <div class="ele-box">
-                            <ul id="eleList" class="ele-list">
+                        <div class="ele-box" style="height: 460px;">
+                            <ul id="eleList2" class="ele-list ele-list2">
                                 <li>Zn</li>
                                 <li>Cu</li>
                                 <li>Si</li>
@@ -231,17 +149,81 @@
                                 <li>Ti</li>
                                 <li>Sn</li>
                                 <li>Al</li>
-                            </ul>
+                            </ul >
                         </div>
-                        <div class="wave-img-box"><img src="img/wave.png" alt=""></div>
-
+                        <div style="margin-left: 85px;height: 250px;" >
+                            <div class="curve fl"><img src="img/wave2.png" alt=""></div>
+                            <div class="conR-form1 nh-style">
+                                <!--<div class="conR-form1-table">-->
+                                    <table>
+                                    <tr>
+                                        <td>
+                                            <label for="">分析程序</label>
+                                            <p class="parent">
+                                                <select name="" id="">
+                                                    <option value="">ANALYSIS001</option>
+                                                    <option value="">ANALYSIS001111</option>
+                                                </select>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="">显示</label>
+                                            <p class="parent">
+                                                <select name="" id="">
+                                                    <option value="">ANALYSIS001</option>
+                                                    <option value="">ANALYSIS001111</option>
+                                                </select>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="">拟合方式</label>
+                                            <p class="parent">
+                                                <select name="" id="">
+                                                    <option value="">ANALYSIS001</option>
+                                                    <option value="">ANALYSIS001111</option>
+                                                </select>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--</div>-->
+                            </div>
+                        </div>
+                       <div style="margin-left: 85px;" >
+                           <div class="conR-form2">
+                               <table>
+                                   <thead>
+                                   <tr>
+                                       <th><input type="checkbox">全选</th>
+                                       <th>油标编号</th>
+                                   </tr>
+                                   </thead>
+                                   <tbody>
+                                   <tr>
+                                       <td><input type="checkbox"></td>
+                                       <td>st-00001</td>
+                                   </tr>
+                                   <tr>
+                                       <td><input type="checkbox"></td>
+                                       <td>st-00001</td>
+                                   </tr>
+                                   <tr>
+                                       <td><input type="checkbox"></td>
+                                       <td>st-00001</td>
+                                   </tr>
+                                   <tr>
+                                       <td><input type="checkbox"></td>
+                                       <td>st-00001</td>
+                                   </tr>
+                                   </tbody>
+                               </table>
+                           </div>
+                       </div>
                     </div>
-                </div>
-                <div class="operate">
-                    <a href="##"><img src="img/o7.png" alt="">开始</a>
-                    <a href="##"><img src="img/o4.png" alt="">保存</a>
-                    <a href="##"><img src="img/o5.png" alt="">打印</a>
-                    <a href="##"><img src="img/o6.png" alt="">导出</a>
                 </div>
             </div>
         </div>
@@ -258,8 +240,8 @@
 <script src="js/index.js"></script>
 <script>
     $(function () {
-        $('#eleList').slimscroll({
-            height:'339px',
+        $('#eleList2').slimscroll({
+            height:'445px',
             alwaysVisible: true, //是否 始终显示组件
             disableFadeOut: false, //是否 鼠标经过可滚动区域时显示组件，离开时隐藏组件
             railVisible: true, //是否 显示轨道
