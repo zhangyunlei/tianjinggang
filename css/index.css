@@ -697,9 +697,24 @@ input[type=checkbox]{
     background-image: -webkit-linear-gradient( 90deg, rgb(235,235,235) 0%, rgb(255,255,255) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(235,235,235) 0%, rgb(255,255,255) 100%);
 }
-.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
     z-index: 2;
     color: #fff;
+    background-color: #f2853b;
+    border-color: #cc6722;
+    background-image: none;
+}
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
     background-color: #f2853b;
     border-color: #cc6722;
     background-image: none;
@@ -708,7 +723,8 @@ input[type=checkbox]{
     border:none;
     background: none;
 }
-.pagination>li.dot>a:focus, .pagination>li.dot>a:hover, .pagination>li.dot>span:focus, .pagination>li.dot>span:hover {
+.pagination>li.dot>a:focus,
+.pagination>li.dot>a:hover{
     z-index: 2;
     color: #5d5d5d;
     background: none;
