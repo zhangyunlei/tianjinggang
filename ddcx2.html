@@ -46,19 +46,77 @@
         <div class="conR com-box2">
             <div class="com-h2">订单查询</div>
             <hr class="com-line">
-            <form action="">
-                <table>
-                    <tr>
-                        <td><label for="">销售订单</label><input type="text"></td>
+            <form action="" style="padding: 30px;">
+                <table class="table-form">
+                    <tr class="form-group">
                         <td>
-                            <label for="">产品属性</label>
-                            <select name="" id="">
-                                <option value="">全部</option>
-                                <option value=""></option>
-                            </select>
+                        <label for="1">销售订单：</label>
+                        <input type="text" class="input" id="1" placeholder="请输入订单号">
+                        </td>
+                        <td>
+                        <label for="2">产品属性：</label>
+                        <select name="" id="2" class="input">
+                            <option value="">全部</option>
+                            <option value=""></option>
+                        </select>
+                        </td>
+                    </tr>
+
+                    <tr class="form-group">
+                        <td colspan="2">
+                        <label for="3">开票日期：</label>
+                        <select name="" id="3" class="input input330">
+                            <option value="">2017-3-27</option>
+                            <option value=""></option>
+                        </select>
+                        <label for="">至</label>
+                        <select name="" id="" class="input input330" >
+                            <option value="">2017-3-27</option>
+                            <option value=""></option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr class="form-group">
+                        <td colspan="2">
+                        <label for="3">需求日期：</label>
+                        <select name="" id="3" class="input input330">
+                            <option value="">2017-3-27</option>
+                            <option value=""></option>
+                        </select>
+                        <label for="">至</label>
+                        <select name="" id="" class="input input330">
+                            <option value="">2017-3-27</option>
+                            <option value=""></option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr class="form-group">
+                        <td>
+                        <label for="">订单节点：</label>
+                        <select name="" id="" class="input">
+                            <option value="">全部</option>
+                            <option value=""></option>
+                        </select>
+                        </td>
+                        <td>
+                        <label for="">订单状态：</label>
+                        <select name="" id="" class="input">
+                            <option value="">全部</option>
+                            <option value=""></option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr class="form-group">
+                        <td colspan="2">
+                        <label for="">客户名称：</label>
+                        <input type="text" class="input input700">
                         </td>
                     </tr>
                 </table>
+                <div class="btn800">
+                    <button type="button" class="red-btn">查询</button>
+                    <button type="button" class="grey-btn">清空</button>
+                </div>
             </form>
             <div class="order-status">
                 <span>共有订单 <i class="red-font">5</i>个</span>

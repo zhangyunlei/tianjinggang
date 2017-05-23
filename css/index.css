@@ -368,3 +368,146 @@ hr.com-line{
 .flow-chart{
     text-align: center;
 }
+.table-form{
+    table-layout: fixed;
+    width: 800px;
+    margin:0 auto;
+}
+.table-form label{
+    color: #444444;
+    font-size: 14px;
+    font-weight: normal;
+}
+.table-form td{
+    padding:10px 0;
+}
+.input{
+    width: 280px;
+    height: 32px;
+    border-radius: 3px;
+    border:1px solid #CFCFCF;
+    padding-left: 6px;
+}
+.input330{
+    width: 329px;
+}
+.input700{
+    width: 680px;
+}
+.btn800{
+    margin:20px 0;
+    text-align: center;
+}
+.btn800 button{
+    /*width: 90px;*/
+    /*height: 38px;*/
+    /*outline: none;*/
+    /*border: none;*/
+    /*margin:0 10px;*/
+}
+.table-form-min{
+    width: 400px;
+    text-align: right;
+}
+.table-form-min input[type=radio]{
+    border: none!important;
+    outline: none!important;
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-top: -3px;
+}
+.table-form-min td{
+    padding-right: 20px;
+}
+.table-form-min tr:nth-child(1) td{
+    padding-right: 0;
+}
+.slideTxtBox {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.slideTxtBox .hd {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+
+.slideTxtBox .hd ul {
+    overflow: hidden;
+}
+.slideTxtBox .hd ul li {
+    float: left;
+    padding: 0 15px;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    background: #d2d2d2;
+    margin-right: 5px;
+    color: #424141;
+    font-size: 14px;
+    text-align: center;
+}
+.slideTxtBox .hd ul li img{
+    margin-right: 5px;
+}
+.slideTxtBox .hd ul li.on {
+    background: #df242a;
+    color: #fff;
+}
+.slideTxtBox .bd{
+    padding: 40px;
+    box-sizing: border-box;
+    background: #fff;
+    border-top:1px solid #df242a;
+}
+.slideTxtBox .bd>div{
+    position: relative;
+    text-align: center;
+}
+.red-btn{
+    display: inline-block;
+    padding:0 35px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 3px;
+    color: #fff;
+    font-size:16px;
+    border: none;
+    outline: none;
+    background: #df242a;
+}
+.grey-btn{
+    display: inline-block;
+    padding:0 35px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 3px;
+    color: #fff;
+    font-size:16px;
+    border: none;
+    outline: none;
+    background: #a5a0a0;
+}
+.al-order{
+    display: none;
+    width: 1140px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:0;
+    background: rgba(255,255,255,0.9);
+    border:1px solid #9C9C9C;
+}
+.al-order th{
+    padding:30px 0!important;
+    background: none;
+    color: #484848;
+    font-size: 16px;
+}
+.al-order span{
+    margin:0 15px;
+}
+
